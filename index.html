@@ -467,25 +467,19 @@
 
         <!-- クイックスタンプリアクション (極上かわいくデザイン一新 🐱🐰🌙) -->
         <div class="stamp-tray flex space-x-2 mt-4 z-30 flex-wrap justify-center gap-y-2">
-            <!-- 🐱 ねこちゃんスタンプ (おめめ、チーク、リボンつき) -->
+            <!-- 🐱 ねこちゃんスタンプ -->
             <button onclick="sendQuickStamp('cat')" class="stamp-btn p-1.5 rounded-full shadow-md w-11 h-11 flex items-center justify-center" title="ねこちゃん">
                 <svg class="w-9 h-9" viewBox="0 0 100 100">
-                    <!-- 耳 -->
                     <path d="M22,35 L38,15 L45,35 Z" fill="#ffb74d" stroke="#e65100" stroke-width="2" />
                     <path d="M78,35 L62,15 L55,35 Z" fill="#ffb74d" stroke="#e65100" stroke-width="2" />
-                    <!-- 顔 -->
                     <ellipse cx="50" cy="52" rx="34" ry="28" fill="#fff9db" stroke="#e65100" stroke-width="2" />
-                    <!-- うるうるおめめ -->
                     <circle cx="38" cy="48" r="4.5" fill="#3e2723" />
                     <circle cx="36.5" cy="46" r="1.5" fill="#fff" />
                     <circle cx="62" cy="48" r="4.5" fill="#3e2723" />
                     <circle cx="60.5" cy="46" r="1.5" fill="#fff" />
-                    <!-- ほっぺ -->
                     <ellipse cx="26" cy="56" rx="5" ry="3" fill="#ff4081" opacity="0.6" />
                     <ellipse cx="74" cy="56" rx="5" ry="3" fill="#ff4081" opacity="0.6" />
-                    <!-- おくち -->
                     <path d="M46,55 Q50,58 54,55" stroke="#3e2723" stroke-width="2" fill="none" stroke-linecap="round" />
-                    <!-- ミニピンクリボン -->
                     <g transform="translate(42, 68) scale(0.35)">
                         <path d="M10,20 C-10,0 -10,40 10,20" fill="#ff4081" />
                         <path d="M30,20 C50,0 50,40 30,20" fill="#ff4081" />
@@ -494,28 +488,21 @@
                 </svg>
             </button>
 
-            <!-- 🐰 うさぎちゃんスタンプ (ながいお耳、ピンクのリボン、うるうるおめめ) -->
+            <!-- 🐰 うさぎちゃんスタンプ -->
             <button onclick="sendQuickStamp('bunny')" class="stamp-btn p-1.5 rounded-full shadow-md w-11 h-11 flex items-center justify-center" title="うさぎちゃん">
                 <svg class="w-9 h-9" viewBox="0 0 100 100">
-                    <!-- ながい耳 -->
                     <path d="M32,32 Q20,-5 40,15 Z" fill="#fff" stroke="#d81b60" stroke-width="2" />
                     <path d="M68,32 Q80,-5 60,15 Z" fill="#fff" stroke="#d81b60" stroke-width="2" />
-                    <!-- 内耳ピンク -->
                     <path d="M30,28 Q22,4 35,17 Z" fill="#f8bbd0" />
                     <path d="M70,28 Q78,4 65,17 Z" fill="#f8bbd0" />
-                    <!-- お顔 -->
                     <circle cx="50" cy="52" r="28" fill="#fff" stroke="#d81b60" stroke-width="2" />
-                    <!-- うるうるおめめ -->
                     <circle cx="39" cy="49" r="4.5" fill="#3e2723" />
                     <circle cx="37.5" cy="47" r="1.5" fill="#fff" />
                     <circle cx="61" cy="49" r="4.5" fill="#3e2723" />
                     <circle cx="59.5" cy="47" r="1.5" fill="#fff" />
-                    <!-- ほっぺ -->
                     <ellipse cx="28" cy="56" rx="5" ry="3" fill="#ff4081" opacity="0.6" />
                     <ellipse cx="72" cy="56" rx="5" ry="3" fill="#ff4081" opacity="0.6" />
-                    <!-- おくち -->
                     <path d="M47,56 Q50,59 53,56" stroke="#3e2723" stroke-width="1.8" fill="none" />
-                    <!-- 耳元のりぼん -->
                     <g transform="translate(18, 25) scale(0.35) rotate(-15)">
                         <path d="M10,20 C-10,0 -10,40 10,20" fill="#ff80ab" />
                         <path d="M30,20 C50,0 50,40 30,20" fill="#ff80ab" />
@@ -524,51 +511,38 @@
                 </svg>
             </button>
 
-            <!-- 🌙 お月様スタンプ (NEW: 雲のベッドで星を抱っこするお月様) -->
+            <!-- 🌙 お月様スタンプ -->
             <button onclick="sendQuickStamp('moon')" class="stamp-btn p-1.5 rounded-full shadow-md w-11 h-11 flex items-center justify-center" title="お月様">
                 <svg class="w-9 h-9" viewBox="0 0 100 100">
-                    <!-- もこもこ雲のベッド -->
                     <path d="M20,70 C15,65 15,55 25,52 C28,42 42,40 50,46 C58,38 72,40 78,50 C88,52 88,62 82,70 Z" fill="#fff" stroke="#90caf9" stroke-width="1.5" opacity="0.95" />
-                    <!-- お月様ベース -->
                     <path d="M40,25 A28,28 0 1,0 78,65 A22,22 0 1,1 40,25 Z" fill="#fff176" stroke="#fbc02d" stroke-width="2" stroke-linejoin="round" />
-                    <!-- 眠そうなおめめ -->
                     <path d="M44,48 Q47,52 50,48" stroke="#5d4037" stroke-width="1.8" fill="none" stroke-linecap="round" />
                     <ellipse cx="42" cy="52" rx="3.5" ry="2" fill="#ff8a80" />
-                    <!-- 抱っこしているちいさな星 -->
                     <g transform="translate(48, 50) scale(0.25)">
                         <path d="M50,10 L60,38 L88,38 L66,54 L74,82 L50,65 L26,82 L34,54 L12,38 L40,38 Z" fill="#ff8a80" stroke="#ff1744" stroke-width="2" />
                     </g>
                 </svg>
             </button>
 
-            <!-- ☕ ココアカップスタンプ (NEW: くまマシュマロがひょっこり浮かぶココア) -->
+            <!-- ☕ ココアカップスタンプ -->
             <button onclick="sendQuickStamp('cup')" class="stamp-btn p-1.5 rounded-full shadow-md w-11 h-11 flex items-center justify-center" title="ココアカップ">
                 <svg class="w-9 h-9" viewBox="0 0 100 100">
-                    <!-- カップ本体 -->
                     <rect x="25" y="46" width="50" height="36" rx="9" fill="#b39ddb" stroke="#7e57c2" stroke-width="2.5" />
-                    <!-- 持ち手 -->
                     <path d="M75,54 Q85,54 85,63 Q85,71 75,71" stroke="#7e57c2" stroke-width="2" fill="none" />
-                    <!-- ココアの液体 & もこもこ泡 -->
                     <ellipse cx="50" cy="46" rx="23" ry="5" fill="#5d4037" stroke="#7e57c2" stroke-width="1.5" />
-                    <!-- 浮かんでいるくまマシュマロ🧸 -->
                     <g transform="translate(14, 4)">
-                        <!-- くま耳 -->
                         <circle cx="28" cy="30" r="5" fill="#fff" stroke="#7e57c2" stroke-width="1.5" />
                         <circle cx="44" cy="30" r="5" fill="#fff" stroke="#7e57c2" stroke-width="1.5" />
                         <circle cx="28" cy="30" r="2.5" fill="#f8bbd0" />
                         <circle cx="44" cy="30" r="2.5" fill="#f8bbd0" />
-                        <!-- くま頭 -->
                         <ellipse cx="36" cy="38" rx="11" ry="9" fill="#fff" stroke="#7e57c2" stroke-width="2" />
-                        <!-- くまお顔 -->
                         <circle cx="32" cy="37" r="1.5" fill="#3e2723" />
                         <circle cx="40" cy="37" r="1.5" fill="#3e2723" />
-                        <!-- 鼻まわり -->
                         <ellipse cx="36" cy="41" rx="3.5" ry="2.5" fill="#e0e0e0" />
                         <circle cx="36" cy="40" r="1" fill="#3e2723" />
                         <ellipse cx="29" cy="41" rx="2" ry="1.2" fill="#ff4081" opacity="0.6" />
                         <ellipse cx="43" cy="41" rx="2" ry="1.2" fill="#ff4081" opacity="0.6" />
                     </g>
-                    <!-- カップを飾るパステルピンクのリボン -->
                     <g transform="translate(35, 54) scale(0.38)">
                         <path d="M10,20 C-10,0 -10,40 10,20 Z" fill="#ff80ab" stroke="#c2185b" stroke-width="2" />
                         <path d="M30,20 C50,0 50,40 30,20 Z" fill="#ff80ab" stroke="#c2185b" stroke-width="2" />
@@ -577,32 +551,26 @@
                 </svg>
             </button>
 
-            <!-- 🌟 きらきら星スタンプ (うるうるおめめのお星様) -->
+            <!-- 🌟 きらきら星スタンプ -->
             <button onclick="sendQuickStamp('star_special')" class="stamp-btn p-1.5 rounded-full shadow-md w-11 h-11 flex items-center justify-center" title="きらきら星">
                 <svg class="w-9 h-9" viewBox="0 0 100 100">
                     <path d="M50,10 L60,38 L88,38 L66,54 L74,82 L50,65 L26,82 L34,54 L12,38 L40,38 Z" fill="#ffe082" stroke="#ff8f00" stroke-width="2" stroke-linejoin="round" />
-                    <!-- うるうるおめめ -->
                     <circle cx="42" cy="46" r="3.5" fill="#3e2723" />
                     <circle cx="41" cy="44.5" r="1" fill="#fff" />
                     <circle cx="58" cy="46" r="3.5" fill="#3e2723" />
                     <circle cx="57" cy="44.5" r="1" fill="#fff" />
-                    <!-- ほっぺ -->
                     <circle cx="34" cy="52" r="3" fill="#ff1744" opacity="0.6" />
                     <circle cx="66" cy="52" r="3" fill="#ff1744" opacity="0.6" />
                     <path d="M48,51 Q50,54 52,51" stroke="#3e2723" stroke-width="1.5" fill="none" />
                 </svg>
             </button>
 
-            <!-- 🪄 魔法のステッキスタンプ (プリンセス風リボン＆ハートの杖) -->
+            <!-- 🪄 魔法のステッキスタンプ -->
             <button onclick="sendQuickStamp('wand')" class="stamp-btn p-1.5 rounded-full shadow-md w-11 h-11 flex items-center justify-center" title="ステッキ">
                 <svg class="w-9 h-9" viewBox="0 0 100 100" style="transform: rotate(-10deg);">
-                    <!-- 持ち手棒 -->
                     <rect x="46" y="46" width="8" height="44" rx="4" fill="#f8bbd0" stroke="#d81b60" stroke-width="1.8" />
-                    <!-- キラキラジュエルのハートトップ -->
                     <path d="M50,42 C50,42 32,24 32,15 C32,5 45,5 50,15 C55,5 68,5 68,15 C68,24 50,42 50,42 Z" fill="#ff80ab" stroke="#d81b60" stroke-width="2" />
-                    <!-- 内側のハートジュエル -->
                     <path d="M50,34 C50,34 38,22 38,16 C38,9 47,9 50,16 C53,9 62,9 62,16 C62,22 50,34 50,34 Z" fill="#fff" opacity="0.5" />
-                    <!-- ぷっくりゴールドリボン -->
                     <g transform="translate(35, 38) scale(0.38)">
                         <path d="M10,20 C-10,0 -10,40 10,20 Z" fill="#ffe082" stroke="#ff8f00" stroke-width="2" />
                         <path d="M30,20 C50,0 50,40 30,20 Z" fill="#ffe082" stroke="#ff8f00" stroke-width="2" />
@@ -611,6 +579,7 @@
                 </svg>
             </button>
 
+            <!-- 💖 ハートスタンプ -->
             <button onclick="sendQuickStamp('heart_note')" class="stamp-btn p-1.5 rounded-full shadow-md w-11 h-11 flex items-center justify-center" title="ハート">
                 <svg class="w-9 h-9" viewBox="0 0 100 100">
                     <path d="M50,78 C50,78 18,55 18,32 C18,17 36,12 50,29 C64,12 82,17 82,32 C82,55 50,78 50,78 Z" fill="#ff80ab" stroke="#d81b60" stroke-width="3" />
@@ -623,6 +592,7 @@
                 </svg>
             </button>
 
+            <!-- 🎀 リボンスタンプ -->
             <button onclick="sendQuickStamp('ribbon_note')" class="stamp-btn p-1.5 rounded-full shadow-md w-11 h-11 flex items-center justify-center" title="リボン">
                 <svg class="w-9 h-9" viewBox="0 0 100 100">
                     <path d="M48,48 C18,20 8,70 45,58 Z" fill="#ce93d8" stroke="#8e24aa" stroke-width="3" />
@@ -689,7 +659,6 @@
         </div>
     </div>
 
-    <!-- 下部の雲レイヤー -->
     <!-- アニメーション & サウンド＆システムスクリプト -->
     <script>
         const canvas = document.getElementById('particleCanvas');
@@ -736,24 +705,18 @@
                     <path d="M47,56 Q50,59 53,56" stroke="#3e2723" stroke-width="1.8" fill="none" />
                   </svg>`,
             moon: `<svg class="w-14 h-14" viewBox="0 0 100 100">
-                    <!-- 雲のベッド -->
                     <path d="M20,70 C15,65 15,55 25,52 C28,42 42,40 50,46 C58,38 72,40 78,50 C88,52 88,62 82,70 Z" fill="#fff" stroke="#90caf9" stroke-width="1.8" opacity="0.95" />
-                    <!-- お月様 -->
                     <path d="M40,25 A28,28 0 1,0 78,65 A22,22 0 1,1 40,25 Z" fill="#fff176" stroke="#fbc02d" stroke-width="2.5" />
-                    <!-- 眠そうなおめめ -->
                     <path d="M44,48 Q47,52 50,48" stroke="#5d4037" stroke-width="2" fill="none" stroke-linecap="round" />
                     <ellipse cx="42" cy="52" rx="3.5" ry="2" fill="#ff8a80" />
-                    <!-- 星っこ -->
                     <g transform="translate(48, 50) scale(0.25)">
                         <path d="M50,10 L60,38 L88,38 L66,54 L74,82 L50,65 L26,82 L34,54 L12,38 L40,38 Z" fill="#ff8a80" stroke="#ff1744" stroke-width="2.5" />
                     </g>
                   </svg>`,
             cup: `<svg class="w-14 h-14" viewBox="0 0 100 100">
-                    <!-- カップ -->
                     <rect x="25" y="46" width="50" height="36" rx="9" fill="#b39ddb" stroke="#7e57c2" stroke-width="2.5" />
                     <path d="M75,54 Q85,54 85,63 Q85,71 75,71" stroke="#7e57c2" stroke-width="2" fill="none" />
                     <ellipse cx="50" cy="46" rx="23" ry="5" fill="#5d4037" stroke="#7e57c2" stroke-width="1.5" />
-                    <!-- くまマシュマロ🧸 -->
                     <g transform="translate(14, 4)">
                         <circle cx="28" cy="30" r="5" fill="#fff" stroke="#7e57c2" stroke-width="1.5" />
                         <circle cx="44" cy="30" r="5" fill="#fff" stroke="#7e57c2" stroke-width="1.5" />
@@ -767,7 +730,6 @@
                         <ellipse cx="29" cy="41" rx="2" ry="1.2" fill="#ff4081" opacity="0.6" />
                         <ellipse cx="43" cy="41" rx="2" ry="1.2" fill="#ff4081" opacity="0.6" />
                     </g>
-                    <!-- カップリボン -->
                     <g transform="translate(35, 54) scale(0.38)">
                         <path d="M10,20 C-10,0 -10,40 10,20 Z" fill="#ff80ab" stroke="#c2185b" stroke-width="2" />
                         <path d="M30,20 C50,0 50,40 30,20 Z" fill="#ff80ab" stroke="#c2185b" stroke-width="2" />
@@ -891,7 +853,7 @@
                 bubble.remove();
             }, 4500);
 
-            // リアクションエフェクト増量（リボンや虹も追加）
+            // リアクションエフェクト増量
             const rect = document.getElementById('dreamContainer').getBoundingClientRect();
             for (let i = 0; i < 12; i++) {
                 particles.push(new Sparkle(rect.left + rect.width/2 + randomX, rect.bottom - 40, 'star'));
@@ -910,37 +872,60 @@
             if (soundEnabled) {
                 btn.innerText = 'ON 🔊';
                 btn.className = 'bg-emerald-100 text-emerald-800 border border-emerald-200 font-bold px-4 py-1.5 rounded-full transition-colors';
-                initAudioContext();
+                tryUnlockAudioEngine();
             } else {
                 btn.innerText = 'OFF 🔇';
                 btn.className = 'bg-rose-100 text-rose-800 border border-rose-200 font-bold px-4 py-1.5 rounded-full transition-colors';
             }
         }
 
-        // 音声エンジン
+        // 音声の明示的イニシャライズとアンロック
         function initAudioContext() {
             if (!audioCtx) {
                 audioCtx = new (window.AudioContext || window.webkitAudioContext)();
             }
         }
 
+        // スマホ(iOS / Android)用オーディオ・アンロックメソッド
+        // Web Audio APIのオートプレイ制限を突破するために、無音を即時再生してアンロック
+        function tryUnlockAudioEngine() {
+            initAudioContext();
+            if (audioCtx && audioCtx.state === 'suspended') {
+                audioCtx.resume().then(() => {
+                    // 音声を許可するために短く無音を流す
+                    const osc = audioCtx.createOscillator();
+                    const gainNode = audioCtx.createGain();
+                    gainNode.gain.setValueAtTime(0, audioCtx.currentTime);
+                    osc.connect(gainNode);
+                    gainNode.connect(audioCtx.destination);
+                    osc.start(0);
+                    osc.stop(0.01);
+                }).catch(e => console.log("Audio unlock failed: ", e));
+            }
+        }
+
+        // タッチやクリックなど、あらゆるユーザーアクションのトリガーにアンロックを仕込む
+        ['touchstart', 'touchend', 'click', 'keydown', 'mousedown'].forEach(eventName => {
+            document.addEventListener(eventName, () => {
+                if (soundEnabled) {
+                    tryUnlockAudioEngine();
+                }
+            }, { once: false, passive: true }); // onceをfalseにして、途中でサスペンドしても自動復帰するようにする
+        });
+
         function playMagicalChime() {
             if (!soundEnabled) return;
-            initAudioContext();
-            if (audioCtx.state === 'suspended') {
-                audioCtx.resume();
-            }
+            tryUnlockAudioEngine();
 
-            playTone(0);
-            setTimeout(() => playTone(120), 80);
+            if (audioCtx && audioCtx.state === 'running') {
+                playTone(0);
+                setTimeout(() => playTone(120), 80);
+            }
         }
 
         function playStampNote(stampKey) {
             if (!soundEnabled) return;
-            initAudioContext();
-            if (audioCtx.state === 'suspended') {
-                audioCtx.resume();
-            }
+            tryUnlockAudioEngine();
 
             const stampNotes = {
                 cat: 523.25,
@@ -953,7 +938,9 @@
                 wand: 1046.50
             };
 
-            playMelodyTone(stampNotes[stampKey] || 523.25, 0);
+            if (audioCtx && audioCtx.state === 'running') {
+                playMelodyTone(stampNotes[stampKey] || 523.25, 0);
+            }
         }
 
         function playMelodyTone(freq, startOffset) {
@@ -1023,18 +1010,6 @@
             osc.stop(audioCtx.currentTime + 1.0);
         }
 
-        
-        // スマホ用オーディオ解除
-        ['touchstart','click'].forEach(evt=>{
-            document.addEventListener(evt,()=>{
-                try{
-                    initAudioContext();
-                    if(audioCtx && audioCtx.state==='suspended'){audioCtx.resume();}
-                }catch(e){}
-            },{once:true});
-        });
-
-
         // 画像のエラーハンドリング
         function handleImageError() {
             mainImage.style.display = 'none';
@@ -1084,7 +1059,6 @@
             }
         }
 
-        // --- パーティクル描画エンジン ---
         const particles = [];
         const backgroundBubbles = []; 
         const airDusts = [];
@@ -1098,7 +1072,6 @@
             reset() {
                 this.x = Math.random() * canvas.width;
                 this.y = canvas.height + Math.random() * 80;
-                // シャボン玉、お月様、お星様、ちいさなリボン、お空の虹をランダムに
                 const types = ['bubble', 'bubble', 'star', 'moon', 'mini-ribbon', 'mini-rainbow'];
                 this.type = types[Math.floor(Math.random() * types.length)];
                 
@@ -1129,7 +1102,6 @@
                 ctx.rotate(this.rotation);
 
                 if (this.type === 'bubble') {
-                    // うるうるシャボン玉
                     ctx.beginPath();
                     ctx.arc(0, 0, this.size, 0, Math.PI * 2);
                     let gradient = ctx.createRadialGradient(-this.size * 0.35, -this.size * 0.35, this.size * 0.05, 0, 0, this.size);
@@ -1144,7 +1116,6 @@
                     ctx.stroke();
                     ctx.fill();
                 } else if (this.type === 'star') {
-                    // 背景のゆっくり浮遊するお星様
                     ctx.shadowBlur = 12;
                     ctx.shadowColor = this.color;
                     ctx.beginPath();
@@ -1158,7 +1129,6 @@
                     ctx.globalAlpha = 0.55;
                     ctx.fill();
                 } else if (this.type === 'moon') {
-                    // 背景のゆっくり浮遊するお月様
                     ctx.shadowBlur = 12;
                     ctx.shadowColor = this.color;
                     ctx.globalAlpha = 0.55;
@@ -1169,25 +1139,20 @@
                     ctx.fillStyle = this.color;
                     ctx.fill();
                 } else if (this.type === 'mini-ribbon') {
-                    // ゆっくりたゆたうミニリボン
                     ctx.globalAlpha = 0.6;
                     ctx.beginPath();
-                    // 左ループ
                     ctx.bezierCurveTo(0, 0, -this.size, -this.size, -this.size, 0);
                     ctx.bezierCurveTo(-this.size, this.size, 0, 0, 0, 0);
-                    // 右ループ
                     ctx.bezierCurveTo(0, 0, this.size, -this.size, this.size, 0);
                     ctx.bezierCurveTo(this.size, this.size, 0, 0, 0, 0);
                     ctx.closePath();
                     ctx.fillStyle = this.color;
                     ctx.fill();
-                    // 中央の結び目
                     ctx.beginPath();
                     ctx.arc(0, 0, this.size * 0.2, 0, Math.PI*2);
                     ctx.fillStyle = '#fff';
                     ctx.fill();
                 } else if (this.type === 'mini-rainbow') {
-                    // ゆっくり漂うちいさな虹
                     ctx.globalAlpha = 0.55;
                     ctx.lineWidth = 3;
                     ctx.strokeStyle = '#ff8a80';
@@ -1281,14 +1246,12 @@
                     ctx.fillStyle = this.color;
                     ctx.fill();
                 } else if (this.type === 'moon') {
-                    // もこもこベッドとお月様の簡易エフェクト
                     ctx.beginPath();
                     ctx.arc(-this.size*0.2, 0, this.size*0.6, -Math.PI/2, Math.PI/2);
                     ctx.arc(0, 0, this.size*0.4, Math.PI/2, -Math.PI/2, true);
                     ctx.closePath();
                     ctx.fillStyle = this.color;
                     ctx.fill();
-                    // 雲のおまけ
                     ctx.beginPath();
                     ctx.arc(this.size*0.3, this.size*0.3, this.size*0.3, 0, Math.PI*2);
                     ctx.fillStyle = '#fff';
@@ -1321,7 +1284,6 @@
                     ctx.closePath();
                     ctx.fillStyle = this.color;
                     ctx.fill();
-                    // たれの部分
                     ctx.beginPath();
                     ctx.moveTo(-2, 2);
                     ctx.lineTo(-this.size * 0.6, this.size * 0.9);
@@ -1330,7 +1292,6 @@
                     ctx.strokeStyle = this.color;
                     ctx.lineWidth = 2.5;
                     ctx.stroke();
-                    // 結び目
                     ctx.beginPath();
                     ctx.arc(0, 0, this.size * 0.25, 0, Math.PI*2);
                     ctx.fillStyle = '#fff';
@@ -1381,7 +1342,6 @@
             for (let i = 0; i < spawnCount; i++) {
                 particles.push(new Sparkle(clientX, clientY, effect));
             }
-            // 常にランダムで小さなリボンや虹をちょっとだけおまけ
             if (Math.random() > 0.6) {
                 particles.push(new Sparkle(clientX, clientY, 'ribbon'));
                 particles.push(new Sparkle(clientX, clientY, 'rainbow'));
@@ -1407,7 +1367,7 @@
             }, { once: true });
         });
 
-        // タッチイベント
+        // タッチイベント (スマホ・タブレット対応)
         interactionZone.addEventListener('touchstart', (e) => {
             if (e.target.closest('.neon-capsule-bar') || e.target.closest('#controlPanel') || e.target.closest('#togglePanelBtn') || e.target.closest('button')) {
                 return;
@@ -1416,7 +1376,7 @@
             for (let i = 0; i < e.touches.length; i++) {
                 spawnSparkles(e.touches[i].clientX, e.touches[i].clientY);
             }
-        });
+        }, { passive: false });
 
         interactionZone.addEventListener('touchmove', (e) => {
             if (e.target.closest('.neon-capsule-bar') || e.target.closest('#controlPanel') || e.target.closest('#togglePanelBtn') || e.target.closest('button')) {
@@ -1426,7 +1386,7 @@
             for (let i = 0; i < e.touches.length; i++) {
                 spawnSparkles(e.touches[i].clientX, e.touches[i].clientY);
             }
-        });
+        }, { passive: false });
 
         // アニメーションループ
         function animate() {
