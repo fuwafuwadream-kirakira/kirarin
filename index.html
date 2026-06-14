@@ -260,9 +260,13 @@
             display: none;
         }
         .stamp-tray .stamp-btn:nth-of-type(1)::after { content: ""; }
-        .stamp-tray .stamp-btn:nth-of-type(1) { background: radial-gradient(circle at 32% 22%, #fff 0 10px, transparent 11px), linear-gradient(145deg, #fff8d8, #ffd7b5); }
+        /* 🌈 夢色レインボー用：ふんわりピンクから淡いイエロー、スカイブルーへの鮮やかグラデーション */
+        .stamp-tray .stamp-btn:nth-of-type(1) { background: radial-gradient(circle at 32% 22%, #fff 0 10px, transparent 11px), linear-gradient(145deg, #ffebee, #fffde7, #e0f7fa); }
+        
         .stamp-tray .stamp-btn:nth-of-type(2)::after { content: ""; }
-        .stamp-tray .stamp-btn:nth-of-type(2) { background: radial-gradient(circle at 32% 22%, #fff 0 10px, transparent 11px), linear-gradient(145deg, #ffffff, #ffd8ef); }
+        /* 🍹 メロディソーダ用：爽快なアクアスカイミント */
+        .stamp-tray .stamp-btn:nth-of-type(2) { background: radial-gradient(circle at 32% 22%, #fff 0 10px, transparent 11px), linear-gradient(145deg, #e0f7fa, #b2ebf2); }
+        
         .stamp-tray .stamp-btn:nth-of-type(3)::after { content: ""; }
         .stamp-tray .stamp-btn:nth-of-type(3) { background: radial-gradient(circle at 32% 22%, #fff 0 10px, transparent 11px), linear-gradient(145deg, #fffbd4, #dff7ff); }
         .stamp-tray .stamp-btn:nth-of-type(4)::after { content: ""; }
@@ -465,49 +469,62 @@
             </div>
         </div>
 
-        <!-- クイックスタンプリアクション (極上かわいくデザイン一新 🐱🐰🌙) -->
+        <!-- クイックスタンプリアクション (ユニコーンから「夢色レインボー」へチェンジ！) -->
         <div class="stamp-tray flex space-x-2 mt-4 z-30 flex-wrap justify-center gap-y-2">
-            <!-- 🐱 ねこちゃんスタンプ -->
-            <button onclick="sendQuickStamp('cat')" class="stamp-btn p-1.5 rounded-full shadow-md w-11 h-11 flex items-center justify-center" title="ねこちゃん">
+            
+            <!-- 🌈 夢色レインバースタンプ (パステルレインボー＆ふわふわ雲) -->
+            <button onclick="sendQuickStamp('rainbow_stamp')" class="stamp-btn p-1.5 rounded-full shadow-md w-11 h-11 flex items-center justify-center" title="虹">
                 <svg class="w-9 h-9" viewBox="0 0 100 100">
-                    <path d="M22,35 L38,15 L45,35 Z" fill="#ffb74d" stroke="#e65100" stroke-width="2" />
-                    <path d="M78,35 L62,15 L55,35 Z" fill="#ffb74d" stroke="#e65100" stroke-width="2" />
-                    <ellipse cx="50" cy="52" rx="34" ry="28" fill="#fff9db" stroke="#e65100" stroke-width="2" />
-                    <circle cx="38" cy="48" r="4.5" fill="#3e2723" />
-                    <circle cx="36.5" cy="46" r="1.5" fill="#fff" />
-                    <circle cx="62" cy="48" r="4.5" fill="#3e2723" />
-                    <circle cx="60.5" cy="46" r="1.5" fill="#fff" />
-                    <ellipse cx="26" cy="56" rx="5" ry="3" fill="#ff4081" opacity="0.6" />
-                    <ellipse cx="74" cy="56" rx="5" ry="3" fill="#ff4081" opacity="0.6" />
-                    <path d="M46,55 Q50,58 54,55" stroke="#3e2723" stroke-width="2" fill="none" stroke-linecap="round" />
-                    <g transform="translate(42, 68) scale(0.35)">
-                        <path d="M10,20 C-10,0 -10,40 10,20" fill="#ff4081" />
-                        <path d="M30,20 C50,0 50,40 30,20" fill="#ff4081" />
-                        <circle cx="20" cy="20" r="5" fill="#fff" />
-                    </g>
+                    <!-- レインボーアーチ -->
+                    <path d="M15,62 A35,35 0 0,1 85,62" stroke="#ff8a80" stroke-width="5" stroke-linecap="round" fill="none" />
+                    <path d="M22,62 A28,28 0 0,1 78,62" stroke="#fff59d" stroke-width="5" stroke-linecap="round" fill="none" />
+                    <path d="M29,62 A21,21 0 0,1 71,62" stroke="#b2dfdb" stroke-width="5" stroke-linecap="round" fill="none" />
+                    <path d="M36,62 A14,14 0 0,1 64,62" stroke="#e1bee7" stroke-width="5" stroke-linecap="round" fill="none" />
+                    <!-- 左のふわふわ雲 -->
+                    <path d="M10,65 C10,56 22,53 28,60 C32,52 44,52 48,60 C51,56 58,56 58,65 Z" fill="#ffffff" opacity="0.95" />
+                    <ellipse cx="20" cy="62" rx="2" ry="1.2" fill="#ff4081" opacity="0.3" />
+                    <!-- 右のふわふわ雲 -->
+                    <path d="M42,65 C42,56 54,53 60,60 C64,52 76,52 80,60 C83,56 90,56 90,65 Z" fill="#ffffff" opacity="0.95" />
+                    <ellipse cx="80" cy="62" rx="2" ry="1.2" fill="#ff4081" opacity="0.3" />
+                    <!-- ニコニコおめめ (左雲) -->
+                    <path d="M22,57 Q25,54 28,57" stroke="#5d4037" stroke-width="1.5" fill="none" stroke-linecap="round" />
+                    <path d="M34,57 Q37,54 40,57" stroke="#5d4037" stroke-width="1.5" fill="none" stroke-linecap="round" />
+                    <path d="M30,60 Q31,62 32,60" stroke="#5d4037" stroke-width="1" fill="none" />
+                    <!-- ニコニコおめめ (右雲) -->
+                    <path d="M54,57 Q57,54 60,57" stroke="#5d4037" stroke-width="1.5" fill="none" stroke-linecap="round" />
+                    <path d="M66,57 Q69,54 72,57" stroke="#5d4037" stroke-width="1.5" fill="none" stroke-linecap="round" />
+                    <path d="M62,60 Q63,62 64,60" stroke="#5d4037" stroke-width="1" fill="none" />
                 </svg>
             </button>
 
-            <!-- 🐰 うさぎちゃんスタンプ -->
-            <button onclick="sendQuickStamp('bunny')" class="stamp-btn p-1.5 rounded-full shadow-md w-11 h-11 flex items-center justify-center" title="うさぎちゃん">
+            <!-- 🍹 メロディソーダスタンプ (パステルミント＆チェリー) -->
+            <button onclick="sendQuickStamp('pastel_soda')" class="stamp-btn p-1.5 rounded-full shadow-md w-11 h-11 flex items-center justify-center" title="パステルソーダ">
                 <svg class="w-9 h-9" viewBox="0 0 100 100">
-                    <path d="M32,32 Q20,-5 40,15 Z" fill="#fff" stroke="#d81b60" stroke-width="2" />
-                    <path d="M68,32 Q80,-5 60,15 Z" fill="#fff" stroke="#d81b60" stroke-width="2" />
-                    <path d="M30,28 Q22,4 35,17 Z" fill="#f8bbd0" />
-                    <path d="M70,28 Q78,4 65,17 Z" fill="#f8bbd0" />
-                    <circle cx="50" cy="52" r="28" fill="#fff" stroke="#d81b60" stroke-width="2" />
-                    <circle cx="39" cy="49" r="4.5" fill="#3e2723" />
-                    <circle cx="37.5" cy="47" r="1.5" fill="#fff" />
-                    <circle cx="61" cy="49" r="4.5" fill="#3e2723" />
-                    <circle cx="59.5" cy="47" r="1.5" fill="#fff" />
-                    <ellipse cx="28" cy="56" rx="5" ry="3" fill="#ff4081" opacity="0.6" />
-                    <ellipse cx="72" cy="56" rx="5" ry="3" fill="#ff4081" opacity="0.6" />
-                    <path d="M47,56 Q50,59 53,56" stroke="#3e2723" stroke-width="1.8" fill="none" />
-                    <g transform="translate(18, 25) scale(0.35) rotate(-15)">
-                        <path d="M10,20 C-10,0 -10,40 10,20" fill="#ff80ab" />
-                        <path d="M30,20 C50,0 50,40 30,20" fill="#ff80ab" />
-                        <circle cx="20" cy="20" r="4" fill="#fff" />
-                    </g>
+                    <!-- ストロー -->
+                    <line x1="56" y1="44" x2="72" y2="12" stroke="#ff80ab" stroke-width="4.5" stroke-linecap="round" />
+                    <line x1="61" y1="34" x2="72" y2="12" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" />
+                    <!-- グラス本体 -->
+                    <path d="M30,32 L34,70 C35,78 65,78 66,70 L70,32 Z" fill="#e0f7fa" stroke="#4dd0e1" stroke-width="2.2" />
+                    <!-- ソーダドリンク部分 -->
+                    <path d="M32,46 L34,70 C35,76 65,76 66,70 L68,46 Z" fill="#80deea" />
+                    <!-- 炭酸シュワシュワの泡 -->
+                    <circle cx="38" cy="56" r="2.2" fill="#ffffff" opacity="0.8" />
+                    <circle cx="60" cy="62" r="1.8" fill="#ffffff" opacity="0.8" />
+                    <circle cx="45" cy="66" r="2.8" fill="#ffffff" opacity="0.9" />
+                    <circle cx="52" cy="50" r="1.5" fill="#ffffff" opacity="0.7" />
+                    <!-- バニラアイス -->
+                    <path d="M34,36 C34,22 66,22 66,36 Z" fill="#ffffff" />
+                    <!-- さくらんぼ -->
+                    <circle cx="42" cy="24" r="6" fill="#ff4081" />
+                    <path d="M42,20 C42,12 52,10 54,16" stroke="#81c784" stroke-width="1.5" fill="none" />
+                    <!-- ソーダのお顔 (超キュート) -->
+                    <circle cx="44" cy="54" r="3" fill="#006064" />
+                    <circle cx="56" cy="54" r="3" fill="#006064" />
+                    <circle cx="43" cy="52.5" r="0.9" fill="#ffffff" />
+                    <circle cx="55" cy="52.5" r="0.9" fill="#ffffff" />
+                    <ellipse cx="38" cy="58" rx="2.5" ry="1.5" fill="#ff8a80" />
+                    <ellipse cx="62" cy="58" rx="2.5" ry="1.5" fill="#ff8a80" />
+                    <path d="M48,58 Q50,60 52,58" stroke="#006064" stroke-width="1.5" fill="none" stroke-linecap="round" />
                 </svg>
             </button>
 
@@ -616,10 +633,16 @@
 
         <div id="controlPanel" class="hidden mt-2 w-72 bg-white/95 backdrop-blur-md p-5 rounded-2xl border border-pink-200 shadow-xl flex flex-col space-y-4 text-xs md:text-sm text-purple-700 transition-all duration-300">
             <!-- サウンド設定 -->
-            <div class="flex items-center justify-between">
-                <span class="font-bold">🎵 魔法の音色</span>
-                <button id="soundBtn" onclick="toggleSound()" class="bg-emerald-100 text-emerald-800 border border-emerald-200 font-bold px-4 py-1.5 rounded-full transition-colors">
-                    ON 🔊
+            <div class="flex flex-col space-y-2">
+                <div class="flex items-center justify-between">
+                    <span class="font-bold">🎵 魔法の音色</span>
+                    <button id="soundBtn" onclick="toggleSound()" class="bg-emerald-100 text-emerald-800 border border-emerald-200 font-bold px-4 py-1.5 rounded-full transition-colors">
+                        ON 🔊
+                    </button>
+                </div>
+                <!-- スマホ用 強制アンロック復旧ボタン -->
+                <button onclick="forceUnlockSound()" class="w-full bg-purple-100 hover:bg-purple-200 active:scale-95 text-purple-700 text-xs font-bold py-1.5 px-3 rounded-full border border-purple-200 transition-all flex items-center justify-center space-x-1">
+                    <span>🔊 スマホで音がでないときはここをタップ！</span>
                 </button>
             </div>
 
@@ -675,34 +698,43 @@
         let soundEnabled = true;
         let audioCtx = null;
         let activeEffect = 'mix';
+        let audioUnlocked = false;
 
         // 各種スタンプ用の吹き出しアニメーション時の超絶可愛いSVGデータ
         const stampSVGData = {
-            cat: `<svg class="w-14 h-14" viewBox="0 0 100 100">
-                    <ellipse cx="50" cy="52" rx="34" ry="28" fill="#fff9db" stroke="#e65100" stroke-width="2.5" />
-                    <path d="M22,35 L38,15 L45,35 Z" fill="#ffb74d" stroke="#e65100" stroke-width="2" />
-                    <path d="M78,35 L62,15 L55,35 Z" fill="#ffb74d" stroke="#e65100" stroke-width="2" />
-                    <circle cx="38" cy="48" r="4.5" fill="#3e2723" />
-                    <circle cx="36.5" cy="46" r="1.5" fill="#fff" />
-                    <circle cx="62" cy="48" r="4.5" fill="#3e2723" />
-                    <circle cx="60.5" cy="46" r="1.5" fill="#fff" />
-                    <ellipse cx="26" cy="56" rx="5" ry="3" fill="#ff4081" opacity="0.6" />
-                    <ellipse cx="74" cy="56" rx="5" ry="3" fill="#ff4081" opacity="0.6" />
-                    <path d="M46,55 Q50,58 54,55" stroke="#3e2723" stroke-width="2" fill="none" />
+            rainbow_stamp: `<svg class="w-14 h-14" viewBox="0 0 100 100">
+                    <path d="M15,62 A35,35 0 0,1 85,62" stroke="#ff8a80" stroke-width="5" stroke-linecap="round" fill="none" />
+                    <path d="M22,62 A28,28 0 0,1 78,62" stroke="#fff59d" stroke-width="5" stroke-linecap="round" fill="none" />
+                    <path d="M29,62 A21,21 0 0,1 71,62" stroke="#b2dfdb" stroke-width="5" stroke-linecap="round" fill="none" />
+                    <path d="M36,62 A14,14 0 0,1 64,62" stroke="#e1bee7" stroke-width="5" stroke-linecap="round" fill="none" />
+                    <path d="M10,65 C10,56 22,53 28,60 C32,52 44,52 48,60 C51,56 58,56 58,65 Z" fill="#ffffff" opacity="0.95" />
+                    <ellipse cx="20" cy="62" rx="2" ry="1.2" fill="#ff4081" opacity="0.3" />
+                    <path d="M42,65 C42,56 54,53 60,60 C64,52 76,52 80,60 C83,56 90,56 90,65 Z" fill="#ffffff" opacity="0.95" />
+                    <ellipse cx="80" cy="62" rx="2" ry="1.2" fill="#ff4081" opacity="0.3" />
+                    <path d="M22,57 Q25,54 28,57" stroke="#5d4037" stroke-width="1.5" fill="none" stroke-linecap="round" />
+                    <path d="M34,57 Q37,54 40,57" stroke="#5d4037" stroke-width="1.5" fill="none" stroke-linecap="round" />
+                    <path d="M30,60 Q31,62 32,60" stroke="#5d4037" stroke-width="1" fill="none" />
+                    <path d="M54,57 Q57,54 60,57" stroke="#5d4037" stroke-width="1.5" fill="none" stroke-linecap="round" />
+                    <path d="M66,57 Q69,54 72,57" stroke="#5d4037" stroke-width="1.5" fill="none" stroke-linecap="round" />
+                    <path d="M62,60 Q63,62 64,60" stroke="#5d4037" stroke-width="1" fill="none" />
                   </svg>`,
-            bunny: `<svg class="w-14 h-14" viewBox="0 0 100 100">
-                    <path d="M32,32 Q20,-5 40,15 Z" fill="#fff" stroke="#d81b60" stroke-width="2.5" />
-                    <path d="M68,32 Q80,-5 60,15 Z" fill="#fff" stroke="#d81b60" stroke-width="2.5" />
-                    <path d="M30,28 Q22,4 35,17 Z" fill="#f8bbd0" />
-                    <path d="M70,28 Q78,4 65,17 Z" fill="#f8bbd0" />
-                    <circle cx="50" cy="52" r="28" fill="#fff" stroke="#d81b60" stroke-width="2.5" />
-                    <circle cx="39" cy="49" r="4.5" fill="#3e2723" />
-                    <circle cx="37.5" cy="47" r="1.5" fill="#fff" />
-                    <circle cx="61" cy="49" r="4.5" fill="#3e2723" />
-                    <circle cx="59.5" cy="47" r="1.5" fill="#fff" />
-                    <ellipse cx="28" cy="56" rx="5" ry="3" fill="#ff4081" opacity="0.6" />
-                    <ellipse cx="72" cy="56" rx="5" ry="3" fill="#ff4081" opacity="0.6" />
-                    <path d="M47,56 Q50,59 53,56" stroke="#3e2723" stroke-width="1.8" fill="none" />
+            pastel_soda: `<svg class="w-14 h-14" viewBox="0 0 100 100">
+                    <line x1="56" y1="44" x2="72" y2="12" stroke="#ff80ab" stroke-width="4.5" stroke-linecap="round" />
+                    <path d="M30,32 L34,70 C35,78 65,78 66,70 L70,32 Z" fill="#e0f7fa" stroke="#4dd0e1" stroke-width="2.2" />
+                    <path d="M32,46 L34,70 C35,76 65,76 66,70 L68,46 Z" fill="#80deea" />
+                    <circle cx="38" cy="56" r="2.2" fill="#ffffff" opacity="0.8" />
+                    <circle cx="60" cy="62" r="1.8" fill="#ffffff" opacity="0.8" />
+                    <circle cx="45" cy="66" r="2.8" fill="#ffffff" opacity="0.9" />
+                    <path d="M34,36 C34,22 66,22 66,36 Z" fill="#ffffff" />
+                    <circle cx="42" cy="24" r="6" fill="#ff4081" />
+                    <path d="M42,20 C42,12 52,10 54,16" stroke="#81c784" stroke-width="1.5" fill="none" />
+                    <circle cx="44" cy="54" r="3" fill="#006064" />
+                    <circle cx="56" cy="54" r="3" fill="#006064" />
+                    <circle cx="43" cy="52.5" r="0.9" fill="#ffffff" />
+                    <circle cx="55" cy="52.5" r="0.9" fill="#ffffff" />
+                    <ellipse cx="38" cy="58" rx="2.5" ry="1.5" fill="#ff8a80" />
+                    <ellipse cx="62" cy="58" rx="2.5" ry="1.5" fill="#ff8a80" />
+                    <path d="M48,58 Q50,60 52,58" stroke="#006064" stroke-width="1.5" fill="none" stroke-linecap="round" />
                   </svg>`,
             moon: `<svg class="w-14 h-14" viewBox="0 0 100 100">
                     <path d="M20,70 C15,65 15,55 25,52 C28,42 42,40 50,46 C58,38 72,40 78,50 C88,52 88,62 82,70 Z" fill="#fff" stroke="#90caf9" stroke-width="1.8" opacity="0.95" />
@@ -749,7 +781,7 @@
                     <g transform="translate(35, 38) scale(0.38)">
                         <path d="M10,20 C-10,0 -10,40 10,20 Z" fill="#ffe082" stroke="#ff8f00" stroke-width="2" />
                         <path d="M30,20 C50,0 50,40 30,20 Z" fill="#ffe082" stroke="#ff8f00" stroke-width="2" />
-                        <circle cx="20" cy="20" r="6" fill="#fff" />
+                        <circle cx="20" cy="20" r="6" fill="#fff" stroke="#ff8f00" stroke-width="2" />
                     </g>
                   </svg>`,
             heart_note: `<svg class="w-14 h-14" viewBox="0 0 100 100">
@@ -793,6 +825,60 @@
             }
         });
 
+        // 音声エンジンの初期化と明示的なアンロック
+        function initAudioContext() {
+            if (!audioCtx) {
+                audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            }
+        }
+
+        function unlockAudioEngine() {
+            if (audioUnlocked) return;
+            try {
+                initAudioContext();
+                if (audioCtx) {
+                    if (audioCtx.state === 'suspended') {
+                        audioCtx.resume();
+                    }
+                    // iOS制限を100%クリアするための無音ダミーバッファ生成と再生
+                    const buffer = audioCtx.createBuffer(1, 1, 22050);
+                    const source = audioCtx.createBufferSource();
+                    source.buffer = buffer;
+                    source.connect(audioCtx.destination);
+                    source.start(0);
+                    source.stop(0.01);
+                    audioUnlocked = true;
+                    console.log("Audio Engine Unlocked Successfully!");
+                }
+            } catch (e) {
+                console.error("Audio unlock failed: ", e);
+            }
+        }
+
+        // スマホ用 強制アンロック復旧ボタン
+        function forceUnlockSound() {
+            audioUnlocked = false;
+            soundEnabled = true;
+            const btn = document.getElementById('soundBtn');
+            btn.innerText = 'ON 🔊';
+            btn.className = 'bg-emerald-100 text-emerald-800 border border-emerald-200 font-bold px-4 py-1.5 rounded-full transition-colors';
+            
+            unlockAudioEngine();
+            // 復活テスト用チャイム
+            setTimeout(() => {
+                playTone(0);
+            }, 50);
+        }
+
+        // あらゆるタッチ・クリック操作に反応してサウンドシステムをレジュームする
+        ['touchstart', 'touchend', 'click', 'mousedown'].forEach(eventName => {
+            document.addEventListener(eventName, () => {
+                if (soundEnabled) {
+                    unlockAudioEngine();
+                }
+            }, { once: false, passive: true });
+        });
+
         // メッセージ吹き出しの送信処理
         function sendBubbleMessage() {
             const text = messageInput.value.trim();
@@ -801,19 +887,16 @@
             const bubble = document.createElement('div');
             bubble.className = "bubble-msg absolute bg-white/90 border-2 border-pink-200/60 text-purple-700 font-bold px-4 py-2 rounded-2xl shadow-md text-xs sm:text-sm whitespace-nowrap z-50 pointer-events-none flex items-center space-x-1.5";
             
-            // リボンや虹も含めた夢かわ絵文字
-            const decors = ['🎀', '🌈', '🧸', '🪄', '🍭', '🍬', '☁️', '⭐', '🌙', '🦄'];
+            const decors = ['🎀', '🌈', '🦄', '🍹', '🪄', '🍭', '🍬', '☁️', '⭐', '🌙'];
             const decor = decors[Math.floor(Math.random() * decors.length)];
             bubble.innerHTML = `<span>${decor}</span> <span>${text}</span>`;
             
-            // ランダムな水平位置
             const randomX = (Math.random() - 0.5) * 220;
             bubble.style.left = `calc(50% + ${randomX}px)`;
             bubble.style.bottom = '80px';
 
             bubbleContainer.appendChild(bubble);
 
-            // アニメーション終了後に要素を削除
             setTimeout(() => {
                 bubble.remove();
             }, 4500);
@@ -872,52 +955,21 @@
             if (soundEnabled) {
                 btn.innerText = 'ON 🔊';
                 btn.className = 'bg-emerald-100 text-emerald-800 border border-emerald-200 font-bold px-4 py-1.5 rounded-full transition-colors';
-                tryUnlockAudioEngine();
+                unlockAudioEngine();
             } else {
                 btn.innerText = 'OFF 🔇';
                 btn.className = 'bg-rose-100 text-rose-800 border border-rose-200 font-bold px-4 py-1.5 rounded-full transition-colors';
             }
         }
 
-        // 音声の明示的イニシャライズとアンロック
-        function initAudioContext() {
-            if (!audioCtx) {
-                audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-            }
-        }
-
-        // スマホ(iOS / Android)用オーディオ・アンロックメソッド
-        // Web Audio APIのオートプレイ制限を突破するために、無音を即時再生してアンロック
-        function tryUnlockAudioEngine() {
-            initAudioContext();
-            if (audioCtx && audioCtx.state === 'suspended') {
-                audioCtx.resume().then(() => {
-                    // 音声を許可するために短く無音を流す
-                    const osc = audioCtx.createOscillator();
-                    const gainNode = audioCtx.createGain();
-                    gainNode.gain.setValueAtTime(0, audioCtx.currentTime);
-                    osc.connect(gainNode);
-                    gainNode.connect(audioCtx.destination);
-                    osc.start(0);
-                    osc.stop(0.01);
-                }).catch(e => console.log("Audio unlock failed: ", e));
-            }
-        }
-
-        // タッチやクリックなど、あらゆるユーザーアクションのトリガーにアンロックを仕込む
-        ['touchstart', 'touchend', 'click', 'keydown', 'mousedown'].forEach(eventName => {
-            document.addEventListener(eventName, () => {
-                if (soundEnabled) {
-                    tryUnlockAudioEngine();
-                }
-            }, { once: false, passive: true }); // onceをfalseにして、途中でサスペンドしても自動復帰するようにする
-        });
-
         function playMagicalChime() {
             if (!soundEnabled) return;
-            tryUnlockAudioEngine();
+            unlockAudioEngine();
 
-            if (audioCtx && audioCtx.state === 'running') {
+            if (audioCtx) {
+                if (audioCtx.state === 'suspended') {
+                    audioCtx.resume();
+                }
                 playTone(0);
                 setTimeout(() => playTone(120), 80);
             }
@@ -925,25 +977,30 @@
 
         function playStampNote(stampKey) {
             if (!soundEnabled) return;
-            tryUnlockAudioEngine();
+            unlockAudioEngine();
 
+            // キャラクターに合わせたピッチ＆音階のマッピング
             const stampNotes = {
-                cat: 523.25,
-                bunny: 587.33,
-                moon: 659.25,
-                cup: 698.46,
-                star_special: 783.99,
-                heart_note: 880.00,
-                ribbon_note: 987.77,
-                wand: 1046.50
+                rainbow_stamp: 523.25,  // C5 (夢色レインボー：澄んださわやかな音)
+                pastel_soda: 587.33,    // D5 (パステルソーダ：軽快な音)
+                moon: 659.25,           // E5
+                cup: 698.46,            // F5
+                star_special: 783.99,   // G5
+                heart_note: 880.00,     // A5
+                ribbon_note: 987.77,    // B5
+                wand: 1046.50           // C6
             };
 
-            if (audioCtx && audioCtx.state === 'running') {
+            if (audioCtx) {
+                if (audioCtx.state === 'suspended') {
+                    audioCtx.resume();
+                }
                 playMelodyTone(stampNotes[stampKey] || 523.25, 0);
             }
         }
 
         function playMelodyTone(freq, startOffset) {
+            if (!audioCtx) return;
             const startTime = audioCtx.currentTime + startOffset;
             const partials = [
                 { ratio: 1, gain: 0.12, type: 'sine', length: 0.55 },
@@ -991,6 +1048,7 @@
         }
 
         function playTone(delayMs) {
+            if (!audioCtx) return;
             const osc = audioCtx.createOscillator();
             const gainNode = audioCtx.createGain();
 
@@ -1016,10 +1074,12 @@
             document.getElementById('fallback-content').style.display = 'flex';
         }
 
+        // スピード切り替え
         function changeFloatSpeed(val) {
             document.documentElement.style.setProperty('--float-duration', `${val}s`);
         }
 
+        // エフェクト設定
         function changeEffect(val) {
             activeEffect = val;
         }
@@ -1372,17 +1432,20 @@
             if (e.target.closest('.neon-capsule-bar') || e.target.closest('#controlPanel') || e.target.closest('#togglePanelBtn') || e.target.closest('button')) {
                 return;
             }
-            e.preventDefault();
+            unlockAudioEngine(); // タッチの瞬間に確実にオーディオシステムを解放
             for (let i = 0; i < e.touches.length; i++) {
                 spawnSparkles(e.touches[i].clientX, e.touches[i].clientY);
             }
-        }, { passive: false });
+        }, { passive: true });
 
+        // スライド中はスクロールを止めてキラキラを出し続ける
         interactionZone.addEventListener('touchmove', (e) => {
             if (e.target.closest('.neon-capsule-bar') || e.target.closest('#controlPanel') || e.target.closest('#togglePanelBtn') || e.target.closest('button')) {
                 return;
             }
-            e.preventDefault();
+            if (e.cancelable) {
+                e.preventDefault();
+            }
             for (let i = 0; i < e.touches.length; i++) {
                 spawnSparkles(e.touches[i].clientX, e.touches[i].clientY);
             }
